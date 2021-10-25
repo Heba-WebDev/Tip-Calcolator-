@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body class="bg-light">
+
+<main class="main flex" style="flex-direction: column;">
+
+<div class="title">
+  <h1 class="fs-400 letter-spacing-1 text-very-dark uppercase">Spli<br>tter</h1>
+</div>
+
+
+<div class="cal-container bg-white grid">
+
+
+  <div class="cal1 grid">
+  <section class="bill">
+    <div class="title-bill padding-bottom flex" style="justify-content: space-between;">
+    <p class="fs-200 text-dark">Bill</p>
+    <p class="fs-200 text-dark hide2">Invalid</p>
+    </div>
+
+    <div class="num-bill bg-text" id="billcontainer">
+    <span class="currency fs-400">
+      <img src="/images/icon-dollar.svg" alt="dollor sign">
+      </span>
+    <input type="number" placeholder="0" id="bill" class="text-rotated bg-text text-input text-dark">
+    </div>
+  
+  
+  </section>
+
+  <section class="tip">
+
+  <div class="tip-title padding-bottom">
+    <p class="fs-200 text-dark">Select Tip %</p>
+  </div>
+
+  <div class="btn-container fs-400">
+
+
+   
+    
+    <div class="btn tips">5%</div>
+    <div class="btn tips default">10%</div>
+    <div class="btn tips">15%</div>
+    <div class="btn tips">25%</div>
+    <div class="btn tips">50%</div>
+    
+    <!-- <button class="custom">Custom</button> -->
+     
+    <input type="number" placeholder="Custom" class="text-rotated bg-text text-input custom" style="text-align: center;"> 
+  
+  </div>
+
+
+  </section>
+
+  <section class="people">
+ 
+
+    <div class="people-title padding-bottom flex" style="justify-content: space-between;">
+      <p class="fs-200 text-dark">Number of People</p>
+      <p class="fs-200 text-dark hide">Invalid</p>
+    </div>
+
+    <div class="people-num" id="peoplecontainer">
+
+      <div class="num-bill bg-text people-num flex">
+        <span class="currency fs-400">
+          <img src="/images/icon-person.svg" alt="icon represnting a person">
+        </span>
+        <input type="number" placeholder="0" id="people" class="text-rotated bg-text text-input"> 
+        </div>
+
+    </div>
+  </section>
+</div>
+
+
+<div class="cal2 grid">
+  <section class="total bg-btn grid">
+
+    <div class="amount flex" style="justify-content: space-between;">
+      
+    <div class="amount-text">
+      <div class="amount1">
+        <p class="text-white fs-400">Tip Amount</p>
+      </div>
+      <div class="amount2">
+        <p class="fs-200 text-light">/ person</p>
+      </div>
+    </div>
+
+    <div class="amount-num">
+     <div class="tip-amount">
+      <p class="text-rest fs-500" id="billPerPerson">$0.00</p>
+     </div>
+
+     
+    </div>
+
+    </div>
+    
+
+    
+    <div class="amount flex" style="justify-content: space-between;">
+      
+      <div class="amount-text">
+        <div class="amount1">
+          <p class="text-white fs-400">Total</p>
+        </div>
+        <div class="amount2">
+          <p class="fs-200 text-light">/ person</p>
+        </div>
+      </div>
+  
+      <div class="amount-num">
+       <div class="tip-amount">
+        <p class="text-rest fs-500" id="tipPerPerson">$0.00</p>
+       </div>
+  
+       
+      </div>
+  
+      </div>
+      
+  
+    
+    <div class="rest">
+      <button class="btn-rest uppercase">Reset</button>
+    </div>
+  </section>
+  
+</div>
+</div>
+</main>  
+
+
+
+<script src="sandbox.js"></script>
+</body>
+</html>
